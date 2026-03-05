@@ -65,7 +65,7 @@ jobs:
           rm -rf gitops
           
           # Clone repository using HTTPS URL without token
-          git clone https://github.com/ZoiloMendoza/grade-api-gitops.git gitops
+          git clone https://github.com/zoilomendoza/grade-api-gitops.git gitops
           cd gitops
           
           if [[ "$OSTYPE" == "darwin"* ]]; then
@@ -81,4 +81,4 @@ jobs:
           git commit -m "Update image to ${{ github.sha }}"
           
           # Push
-          git push -f https://${GIT_TOKEN}@github.com/ZoiloMendoza/grade-api-gitops.git main
+          git push -f https://${GIT_TOKEN}@github.com/zoilomendoza/grade-api-gitops.git main
